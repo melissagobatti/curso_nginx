@@ -1,0 +1,34 @@
+Atualizar Debian 
+> apt update
+
+Instalar o Nginx
+> apt install nginx
+
+Remover symlink padrão
+> rm /etc/nginx/sites-enabled/default
+
+Reconfigura Nginx
+> systemctl reload nginx
+
+Configurar dominios ou sub dominios
+> cd /etc/nginx/sites-enabled
+
+Reiniciar o servidor Debian
+> reboot
+
+Instalar o Certbot
+> apt install certbot python3-certbot-nginx
+
+Reiniciar o Servidor
+> reboot
+
+Verificar se CertBot está configurado para Autorenovação
+> systemctl status certbot.timer
+
+Para testar o processo de renovação
+> certbot renew --dry-run
+
+Força a renovação SSL
+> certbot renew
+Gerar SSL Dominio 
+> certbot --nginx -d example.com
