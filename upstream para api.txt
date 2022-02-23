@@ -1,0 +1,15 @@
+Horse
+
+    upstream api {
+        server 192.168.0.120:80 max_fails=2 fail_timeout=2s weight=1;
+        server 192.168.0.121:80 max_fails=2 fail_timeout=2s weight=1;
+    }
+
+    server {
+             listen 80;
+             server_name api.seudominio.com.br;    
+
+    location / {
+             proxy_pass http://api;
+             }
+           }
