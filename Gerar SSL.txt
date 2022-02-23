@@ -1,0 +1,8 @@
+Rode o Comando no terminal 
+
+# certbot --nginx -d seudominio.com.br 
+# certbot --nginx -d api.seudominio.com.br 
+
+
+
+
