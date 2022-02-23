@@ -1,3 +1,5 @@
+No trinamento usamos a distribuição do Debian.
+
 Atualizar Debian 
 > apt update
 
