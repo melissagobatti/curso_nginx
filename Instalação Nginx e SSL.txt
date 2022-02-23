@@ -1,4 +1,4 @@
-No trinamento usamos a distribuição do Debian.
+No treinamento usamos a distribuição do Debian.
 
 Atualizar Debian 
 > apt update
