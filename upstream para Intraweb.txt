@@ -1,0 +1,17 @@
+Intraweb
+
+    upstream iw {
+        ip_hash;
+        server 192.168.0.120:90 weight=1;
+        server 192.168.0.121:90 weight=1;
+    }
+
+    server {
+             listen 80;
+             server_name seudominio.com.br;    
+
+    location / {
+             proxy_pass http://iw;
+             }
+           }
+
