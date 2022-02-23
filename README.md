@@ -11,3 +11,5 @@ Eu utilizo Nginx em minha empresa como um servidor de terminação SSL e proxy-r
 
 Desde a versão 5.2, o sistema operacional OpenBSD utiliza o Nginx como parte do sistema base, provendo uma alternativa ao fork do Apache 1.3 que o sistema utilizava, o qual o Nginx tinha como finalidade substituir, mas que acabou sendo substituído por uma implementação própria de httpd.
 
+#Documentação do Nginx:
+http://nginx.org/en/docs/
